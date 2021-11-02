@@ -72,6 +72,7 @@ class FallTransformer(nn.Module):
             nn.Linear(embed_dim, num_classes)
         )
 
+        self.sigmoid=nn.Sigmoid()
 
     def Spatial_forward_features(self, x):
         b, _, f, p = x.shape  ##### b is batch size, f is number of frames, p is number of joints
@@ -111,4 +112,4 @@ class FallTransformer(nn.Module):
         x = self.forward_features(x)
         x = self.class_head(x)
 
-        return x 
+        return self.sigmoid(x) 
