@@ -28,22 +28,26 @@ Cameras=['Camera1','Camera2']
 
 #Iterate over all actions for one subject
 parent_dir='/home/mo926312/Documents/falldet/'
-poses_path='poses/'#parent_dir+'poses'
-output_dir='PreProcess_poses/'#parent_dir+'PreProcess_poses/Subject1/'
+poses_path=parent_dir+'poses/'
+output_dir=parent_dir+'PreProcess_poses/'
 
 subjects=os.listdir(poses_path)
-
-for sub in subjects:
+temp_path=''
+for sub in Subjects[:5]:
 	activities=ret_dir(poses_path+sub+'/')
+	temp_path=poses_path+sub+'/'
 	if activities is not None:
 		for act in activities:
 			trials=ret_dir(poses_path+sub+'/'+act+'/')
+			temp_path=poses_path+sub+'/'+act+'/'
 			if trials is not None:
 				for trial in trials:
 					cams=ret_dir(poses_path+sub+'/'+act+'/'+trial+'/')
+					temp_path=poses_path+sub+'/'+act+'/'+trial+'/'
 					if cams is not None:
 						for cam in cams:
 							cam_path=poses_path+sub+'/'+act+'/'+trial+'/'+cam+'/'
+							temp_path=poses_path+sub+'/'+act+'/'+trial+'/'+cam+'/'
 							if os.path.isdir(cam_path):
 								activity_poses=cam_path+'alphapose-results.json'
 								#Perform Pre-processing of poses
@@ -80,11 +84,5 @@ for sub in subjects:
 									print("Processed: ",file_path)
 									#This data object contains alposes, one per frame for detected persons, in following format
 									# image_id - keypoints (17 xy joints) - bbox - score
-
-
-
-		
-
-
-
+print("Temp Path: ",temp_path)
 
