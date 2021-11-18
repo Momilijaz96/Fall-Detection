@@ -8,6 +8,11 @@ def remove_kpscores(keypoints):
 	[keypoints.remove(s) for s in keypoints[2::3]]
 	return keypoints
 
+#Process pased obj to ake ti compatible for making df
+def obj_format(obj):
+	obj=obj.to_dict('index')
+	key=list(obj.keys())[0]
+	return obj[key]
 
 #Function to return list of elements if path is a dir
 def ret_dir(path):
@@ -56,22 +61,23 @@ for sub in subjects:
 										action_sample_new.append(frame_obj)
 
 									action_df=pd.DataFrame(action_sample_new) #single df with desired cols and keypoints w/o scores
+									#print("Action DF: ",action_df['keypoints'][0])
 
 									#Remove Multiple bboxes from one frame
 									temp_df=action_df[['image_id','score']].groupby('image_id').max()
-									action_df=pd.DataFrame(action_sample_new)
-
+									
 									unique_action_list=[]
 									for image_id,sample in temp_df.iterrows():
-										obj=dict(action_df.loc[(action_df['image_id']==image_id)&(action_df['score']==sample['score'])])
-										unique_action_list.append(obj)
+										obj=(action_df[(action_df['image_id']==image_id)&(action_df['score']==sample['score'])])
+										unique_action_list.append(obj_format(obj))
 
 									unique_action_df=pd.DataFrame(unique_action_list) #df with one pose per frame, with highest score
+									#print("Final df:",unique_action_df['keypoints'][0])
 									if not os.path.exists(output_dir+sub+'/'):
 										os.makedirs(output_dir+sub+'/')	
-										file_path=output_dir+sub+'/'+sub+act+trial+cam+'.csv'
-										unique_action_df.to_csv(file_path)
-										print("Processed: ",file_path)
+									file_path=output_dir+sub+'/'+sub+act+trial+cam+'.csv'
+									unique_action_df.to_csv(file_path,index=False)
+									print("Processed: ",file_path)
 									#This data object contains alposes, one per frame for detected persons, in following format
 									# image_id - keypoints (17 xy joints) - bbox - score
 
