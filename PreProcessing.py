@@ -21,7 +21,7 @@ def ret_dir(path):
 	else:
 		return None
 		
-Subjects=['Subject1','Subject2','Subject3','Subject4','Subject5','Subject5','Subject6','Subject7','Subject8','Subject9','Subject10','Subject11','Subject12','Subject13','Subject14','Subject15','Subject16','Subject17']
+Subjects=['Subject1','Subject2','Subject3','Subject4','Subject5','Subject6','Subject7','Subject8','Subject9','Subject10','Subject11','Subject12','Subject13','Subject14','Subject15','Subject16','Subject17']
 Activities=['Activity1','Activity2','Activity3','Activity4','Activity5','Activity6','Activity7','Activity8','Activity9','Activity10','Activity11']
 Trials=['Trial1','Trial2','Trial3']
 Cameras=['Camera1','Camera2']
@@ -33,7 +33,7 @@ output_dir=parent_dir+'PreProcess_poses/'
 
 subjects=os.listdir(poses_path)
 temp_path=''
-for sub in Subjects[:5]:
+for sub in ['Subject6']:
 	activities=ret_dir(poses_path+sub+'/')
 	temp_path=poses_path+sub+'/'
 	if activities is not None:

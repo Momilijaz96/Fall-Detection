@@ -1,28 +1,31 @@
 import os
 import numpy as np
+import pandas as pd
 
 #Path to poses directory
-path='../poses/'
+path='../../PreProcess_poses/'
 
 #frames count in each action sample
 fc=[]
-
-
+sample=[]
 subjects=os.listdir(path)
-#Get min frames
+ACTIVITIES=['Activity1','Activity2','Activity3','Activity4','Activity5','Activity6','Activity7','Activity8','Activity9','Activity10','Activity11']
+TRIALS=['Trial1','Trial2','Trial3']
+
 for sub in subjects:
-    sub_path=path+'/'+sub
-    if os.path.isdir(sub_path):
-        activities=os.listdir(sub_path)
-        for act in activities:
-            act_path=sub_path+'/'+act
-            if os.path.isdir(act_path):
-                trials=os.listdir(act_path)
-                for trial in trials:
-                    trial_path=act_path+'/'+trial
-                    if os.path.isdir(trial_path):
-                        act_poses=os.listdir(trial_path+'/Camera1/mocap/')
-                        fc.append(len(act_poses))
+	sub_path=path+sub+'/'
+	poses=os.listdir(sub_path)
+	for pose in poses:
+		df=pd.read_csv(sub_path+pose)
+		fc.append(len(df))
+		sample.append(pose)
+
+
 #Print min frames
-print("Min Frames are ", np.min(fc), " for sample id-",np.argmin(fc))
-print(fc)                            
+print("Min Frames are ", np.min(fc), " for sample ",sample[np.argmin(fc)])
+print("Mean frames are: ",np.mean(fc))
+print("Max frames are: ",np.max(fc))
+print("Frame size variation: ",np.var(fc))
+print("Poses with less than 200 frames: ",np.sum(np.array(fc)>200))
+print("Total poses:",len(fc))
+#print(fc)

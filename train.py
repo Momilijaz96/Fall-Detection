@@ -1,8 +1,8 @@
 import torch
 import numpy as np
-from data_gen import Poses3d_Dataset,label,partition,pose2id
-from model import FallTransformer
-from visualize import get_plot
+from data_gen import Poses2d_Dataset,label,partition,pose2id
+from Model.pf4fall import FallTransformer
+from utils.visualize import get_plot
 
 #CUDA for PyTorch
 use_cuda = torch.cuda.is_available()
@@ -10,7 +10,7 @@ device = torch.device("cuda:0" if use_cuda else "cpu")
 torch.backends.cudnn.benchmark = True
 
 # Parameters
-params = {'batch_size': 64,
+params = {'batch_size': 16,
           'shuffle': True,
           'num_workers': 6}
 max_epochs = 100
@@ -20,17 +20,18 @@ inf_threshold=0.5
 # Datasets
 partition = partition
 labels = label
-
+num_frames=200
+#print("Pose2od: ",pose2id)
 # Generators
-training_set = Poses3d_Dataset(partition['train'], labels, pose2id)
+training_set = Poses2d_Dataset(partition['train'], labels, pose2id, num_frames)
 training_generator = torch.utils.data.DataLoader(training_set, **params)
 
-validation_set = Poses3d_Dataset(partition['test'], labels,pose2id)
+validation_set = Poses2d_Dataset(partition['test'], labels, pose2id, num_frames)
 validation_generator = torch.utils.data.DataLoader(validation_set, **params)
 
 #Define model
-frames=79
-fall_model=FallTransformer(num_frame=frames, num_joints=49, in_chans=3)
+
+fall_model=FallTransformer(num_frame=num_frames, num_joints=17, in_chans=2)
 fall_model=fall_model.to(device)
 
 
@@ -50,18 +51,18 @@ for epoch in range(max_epochs):
     #Training
     for batch_idx,sample in enumerate(training_generator):
         #Transfer to GPU
-        local_batch,local_labels=sample
+        local_batch,local_labels=sample; #local_labels=torch.squeeze(local_labels,-1)
         local_batch, local_labels = local_batch.to(device), local_labels.to(device)
         
         optimizer.zero_grad()
 
         #Predict fall/no fall activity
-        predict_labels=fall_model(local_batch)
-        
+        predict_labels=fall_model(local_batch.float())
+
         #print("Target is", local_labels.size())
         #print("Pred is", predict_labels.size())        
         #Compute loss
-        local_labels=local_labels.view(local_labels.size()[0],1,1)
+        local_labels=local_labels.view(local_labels.size()[0],1)
         local_labels=local_labels.to(torch.float32)
         prediction_loss=criterion(predict_labels,local_labels)
         

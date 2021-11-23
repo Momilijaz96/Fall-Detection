@@ -1,14 +1,13 @@
 import math
 import pandas as pd
 import numpy as np
-import pickle
 import os
 import torch
 import ast
 
 
 ####### LOAD THE 3D POSES FOR UPFALL ACTION SAMPLES #######
-path='poses'#/home/mo926312/Documents/falldet/poses/' #path to 3d poses for actions
+path='/home/mo926312/Documents/falldet/PreProcess_poses/' #path to 3d poses for actions
 SUBJECTS=['Subject1','Subject2','Subject3','Subject4','Subject5','Subject6']
 ACTIVITIES=['Activity1','Activity2','Activity3','Activity4','Activity5','Activity6','Activity7','Activity8','Activity9','Activity10','Activity11']
 TRIALS=['Trial1','Trial2','Trial3']
@@ -35,7 +34,7 @@ def pose2idlabel(poses_path):
         if os.path.isdir(sub_path):
             samples=os.listdir(sub_path)
             for sample in samples:
-                pose2id['id-'+str(i)]=sample #pose2id['id-1']='S1A1T1C1.csv',...
+                pose2id['id-'+str(i)]=sub_path+sample #pose2id['id-1']='S1A1T1C1.csv',...
                 id2label['id-'+str(i)]=get_actid(sample) #Get activity label
                 i+=1
     return pose2id,id2label
@@ -58,12 +57,13 @@ partition['test']=ids[idx:]
         
 #Create pytorch dataset
 
-class Poses3d_Dataset(torch.utils.data.Dataset):
-    def __init__(self, list_IDs, labels, pose2id):
+class Poses2d_Dataset(torch.utils.data.Dataset):
+    def __init__(self, list_IDs, labels, pose2id,num_frames):
             'Initialization'
             self.labels = labels
             self.list_IDs = list_IDs
             self.pose2id = pose2id
+            self.num_frames=num_frames
 
     #Function to get poses for F frames/ one sample, given sample id 
     def get_pose_data(self,id):
@@ -75,6 +75,15 @@ class Poses3d_Dataset(torch.utils.data.Dataset):
                 joints2d = (ast.literal_eval(row['keypoints']))
                 joints2d = np.array(joints2d).reshape(17,2) #2d joints for one frame - 17x2
                 data_sample.append(joints2d)
+                
+            if len(data_sample)<self.num_frames:
+                diff=self.num_frames-len(data_sample)
+                last_pose=data_sample[-1]
+                append_list=[last_pose]*diff
+                data_sample=data_sample+append_list
+            else:
+                data_sample=data_sample[:self.num_frames]
+		
         return np.array(data_sample)
 
     def __len__(self):

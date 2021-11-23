@@ -1,6 +1,6 @@
 import numpy as np
-from data_gen import Poses3d_Dataset,label,partition,pose2id
-from model import FallTransformer
+from data_gen import Poses2d_Dataset,label,partition,pose2id
+from Model.pf4fall import FallTransformer
 import torch
 
 #CUDA for PyTorch
@@ -21,7 +21,7 @@ inf_threshold=0.5
 
 
 #Generator
-validation_set = Poses3d_Dataset(partition['test'], labels,pose2id)
+validation_set = Poses2d_Dataset(partition['test'], labels,pose2id)
 validation_generator = torch.utils.data.DataLoader(validation_set, **params)
 
 #Load pretrained model and criterion
