@@ -1,7 +1,7 @@
 import torch
 import numpy as np
-from data_gen import Poses2d_Dataset,label,partition,pose2id
-from Model.pf4fall import FallTransformer
+from data_gen_recog import Poses2d_Dataset,label,partition,pose2id
+from RecogModel.recog_model import RecogTransformer
 from utils.visualize import get_plot
 
 #CUDA for PyTorch
@@ -31,13 +31,13 @@ validation_generator = torch.utils.data.DataLoader(validation_set, **params)
 
 #Define model
 
-fall_model=FallTransformer(num_frame=num_frames, num_joints=17, in_chans=2)
-fall_model=fall_model.to(device)
+model=RecogTransformer(num_frame=num_frames, num_joints=17, in_chans=2)
+model=model.to(device)
 
 
 #Define loss and optimizer
-criterion=torch.nn.BCELoss()
-optimizer=torch.optim.SGD(fall_model.parameters(), lr=0.01, momentum=0.9)
+criterion=torch.nn.CrossEntropyLoss()
+optimizer=torch.optim.SGD(model.parameters(), lr=0.01, momentum=0.9)
 
 #Loop over epochs
 print("Begin Training....")
@@ -47,7 +47,7 @@ epoch_acc=[]
 for epoch in range(max_epochs):
     correct=0
     loss=[]
-    fall_model.train()
+    model.train()
     #Training
     for batch_idx,sample in enumerate(training_generator):
         #Transfer to GPU
@@ -57,14 +57,12 @@ for epoch in range(max_epochs):
         optimizer.zero_grad()
 
         #Predict fall/no fall activity
-        predict_labels=fall_model(local_batch.float())
-
-        #print("Target is", local_labels.size())
-        #print("Pred is", predict_labels.size())        
+        predict_probs=model(local_batch.float())
         #Compute loss
-        local_labels=local_labels.view(local_labels.size()[0],1)
-        local_labels=local_labels.to(torch.float32)
-        prediction_loss=criterion(predict_labels,local_labels)
+        #local_labels=local_labels.view(local_labels.size()[0],1)
+        #local_labels=local_labels.to(torch.float32)
+        prediction_loss=criterion(predict_probs,local_labels)
+               
         
         #Compute gradients
         prediction_loss.backward()
@@ -76,7 +74,8 @@ for epoch in range(max_epochs):
         loss.append(prediction_loss.item())
 
         #Compute number of correctly predicted
-        correct += ((predict_labels>=inf_threshold)==local_labels).sum().item()
+        predict_labels = torch.argmax(predict_probs)
+        correct += (predict_labels==local_labels).sum().item()
     
     num_samples=(batch_idx+1) * params['batch_size']
     train_acc = 100 * correct / num_samples
@@ -91,4 +90,4 @@ get_plot(epoch_loss,'Training_Loss')
 get_plot(epoch_acc,'Training_Accuracy',ylabel='Accuracy(%)')
 
 #Save trained model
-torch.save(fall_model,"fall_model.pt")
+torch.save(model,"recog_model.pt")

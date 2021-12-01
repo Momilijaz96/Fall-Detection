@@ -15,5 +15,5 @@ source activate fallenv
 #conda_install_numpy
 #python3_-m_pip_install_einops
 #python3_-m_pip_install_matplotlib
-python3 ../train.py 
+python3 ../train_recog.py 
 

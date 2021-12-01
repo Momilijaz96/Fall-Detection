@@ -1,4 +1,27 @@
- Loss:  0.06  Accuracy: 95.94  for  307 / 320
-Precesion :  tensor(0.9857, device='cuda:0')
-Recall :  tensor(0.9452, device='cuda:0')
-F1 score :  tensor(0.9650, device='cuda:0')
+Num Frames: 200
+Embed dim ratio 32
+Embed dim:  544
+Begin Training....
+Epoch:  0  Loss:  3.44  Accuracy: 0.13  for  1 / 752
+Epoch:  1  Loss:  3.01  Accuracy: 1.06  for  8 / 752
+Epoch:  2  Loss:  2.24  Accuracy: 0.4  for  3 / 752
+Epoch:  3  Loss:  1.66  Accuracy: 0.8  for  6 / 752
+Epoch:  4  Loss:  1.46  Accuracy: 0.66  for  5 / 752
+Epoch:  5  Loss:  1.44  Accuracy: 0.53  for  4 / 752
+Epoch:  6  Loss:  1.31  Accuracy: 1.2  for  9 / 752
+Epoch:  7  Loss:  1.14  Accuracy: 0.8  for  6 / 752
+Epoch:  8  Loss:  1.15  Accuracy: 0.8  for  6 / 752
+Epoch:  9  Loss:  1.1  Accuracy: 1.06  for  8 / 752
+Epoch:  10  Loss:  1.01  Accuracy: 0.4  for  3 / 752
+Epoch:  11  Loss:  0.87  Accuracy: 1.46  for  11 / 752
+Epoch:  12  Loss:  0.8  Accuracy: 0.27  for  2 / 752
+Epoch:  13  Loss:  0.84  Accuracy: 0.13  for  1 / 752
+Epoch:  14  Loss:  0.8  Accuracy: 0.66  for  5 / 752
+Epoch:  15  Loss:  0.74  Accuracy: 1.73  for  13 / 752
+Epoch:  16  Loss:  0.74  Accuracy: 1.33  for  10 / 752
+Epoch:  17  Loss:  0.69  Accuracy: 0.66  for  5 / 752
+Epoch:  18  Loss:  0.61  Accuracy: 1.2  for  9 / 752
+Epoch:  19  Loss:  0.67  Accuracy: 1.33  for  10 / 752
+Epoch:  20  Loss:  0.56  Accuracy: 0.93  for  7 / 752
+Epoch:  21  Loss:  0.53  Accuracy: 0.93  for  7 / 752
+Epoch:  22  Loss:  0.59  Accuracy: 0.8  for  6 / 752
