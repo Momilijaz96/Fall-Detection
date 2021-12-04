@@ -13,14 +13,14 @@ torch.backends.cudnn.benchmark = True
 params = {'batch_size': 16,
           'shuffle': True,
           'num_workers': 6}
-max_epochs = 100
+max_epochs = 400
 inf_threshold=0.5
 
 
 # Datasets
 partition = partition
 labels = label
-num_frames=200
+num_frames=250
 #print("Pose2od: ",pose2id)
 # Generators
 training_set = Poses2d_Dataset(partition['train'], labels, pose2id, num_frames)
@@ -37,7 +37,10 @@ model=model.to(device)
 
 #Define loss and optimizer
 criterion=torch.nn.CrossEntropyLoss()
-optimizer=torch.optim.SGD(model.parameters(), lr=0.01, momentum=0.9)
+#optimizer=torch.optim.SGD(model.parameters(), lr=0.01, momentum=0.9)
+lr=0.00011
+lr_decay=0.99
+optimizer = torch.optim.AdamW(model.parameters(), lr=lr, weight_decay=0.1)
 
 #Loop over epochs
 print("Begin Training....")
@@ -74,8 +77,13 @@ for epoch in range(max_epochs):
         loss.append(prediction_loss.item())
 
         #Compute number of correctly predicted
-        predict_labels = torch.argmax(predict_probs)
+        predict_labels = torch.argmax(predict_probs,dim=1); #print("Target :",local_labels," Pred: ",predict_labels)
         correct += (predict_labels==local_labels).sum().item()
+	
+        #Decay lr exponentially
+        lr *= lr_decay
+        for param_group in optimizer.param_groups:
+            param_group['lr'] *= lr_decay
     
     num_samples=(batch_idx+1) * params['batch_size']
     train_acc = 100 * correct / num_samples

@@ -13,8 +13,8 @@ from .utils_pf4fall import Block
 
 class FallTransformer(nn.Module):
     def __init__(self, num_frame=9, num_joints=17, in_chans=2, embed_dim_ratio=32, depth=4,
-                 num_heads=8, mlp_ratio=2., qkv_bias=True, qk_scale=None,
-                 drop_rate=0., attn_drop_rate=0., drop_path_rate=0.2,  norm_layer=None, num_classes=1):
+                num_heads=8, mlp_ratio=2., qkv_bias=True, qk_scale=None,
+                drop_rate=0., attn_drop_rate=0., drop_path_rate=0.2,  norm_layer=None, num_classes=1):
         """    ##########hybrid_backbone=None, representation_size=None,
         Args:
             num_frame (int, tuple): input frame number
@@ -43,7 +43,7 @@ class FallTransformer(nn.Module):
         ### spatial patch embedding
         self.Spatial_patch_to_embedding = nn.Linear(in_chans, embed_dim_ratio)
         self.Spatial_pos_embed = nn.Parameter(torch.zeros(1, num_joints, embed_dim_ratio))
-        
+
         self.Temporal_pos_embed = nn.Parameter(torch.zeros(1, num_frame+1, embed_dim)) #additional pos embedding zero for class token
         self.class_token_embed = nn.Parameter(torch.zeros(1, 1, embed_dim)) #class token patch embed
         self.pos_drop = nn.Dropout(p=drop_rate)
@@ -91,25 +91,30 @@ class FallTransformer(nn.Module):
     def forward_features(self, x):
         b  = x.shape[0]
         class_token=torch.tile(self.class_token_embed,(b,1,1)) #(B,1,embed_dim)
-        x = torch.cat((x,class_token),dim=1) #(B,F+1,embed_dim)
+        x = torch.cat((x,class_token),dim=1)
+        #print("X Shape: ",x.shape," - Temporal Pos Embed Shape: ",self.Temporal_pos_embed.shape)
         x += self.Temporal_pos_embed
         x = self.pos_drop(x)
         for blk in self.blocks:
             x = blk(x)
 
         x = self.Temporal_norm(x)
-        
+
         ###Extract Class token head from the output
         x = x[:,-1,:]
-        x = x.view(b, -1) # (Batch_size, class_embedding_size)
+        x = x.view(b, -1) #(Batch_size, class_embedding_size)
         return x
 
     def forward(self, x):
+        print("Original X: ",x.shape)
         x = x.permute(0, 3, 1, 2) #Rearranges original tensor according to specified index order
         b, _, _, p = x.shape
         ### now x is [batch_size, 2 channels, receptive frames, joint_num], following image data
         x = self.Spatial_forward_features(x)
+        print("Spatial Forward Features: ",x.shape)
         x = self.forward_features(x)
+        print("Temporal Features: ",x.shape)
         x = self.class_head(x)
+        print("Classification Head: ",x.shape)
 
-        return self.sigmoid(x) 
+        return self.sigmoid(x)

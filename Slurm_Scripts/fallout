@@ -1,0 +1,1861 @@
+Num Frames: 200
+Embed dim ratio 32
+Embed dim:  544
+Begin Training....
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.6067],
+        [0.4908],
+        [0.4407],
+        [0.4088],
+        [0.5232],
+        [0.4959],
+        [0.5811],
+        [0.4998],
+        [0.5404],
+        [0.6053],
+        [0.4594],
+        [0.5935],
+        [0.5888],
+        [0.6139],
+        [0.4568],
+        [0.5410]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.1907],
+        [0.1500],
+        [0.1953],
+        [0.1479],
+        [0.2194],
+        [0.1760],
+        [0.1604],
+        [0.1568],
+        [0.1578],
+        [0.1836],
+        [0.1775],
+        [0.1883],
+        [0.1824],
+        [0.2782],
+        [0.1566],
+        [0.1766]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.2406],
+        [0.4847],
+        [0.1137],
+        [0.5010],
+        [0.4898],
+        [0.2305],
+        [0.2401],
+        [0.4987],
+        [0.5237],
+        [0.1652],
+        [0.1177],
+        [0.1224],
+        [0.4539],
+        [0.1184],
+        [0.2766],
+        [0.4922]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.9137],
+        [0.8126],
+        [0.6986],
+        [0.9370],
+        [0.9372],
+        [0.7262],
+        [0.9312],
+        [0.9570],
+        [0.9260],
+        [0.8652],
+        [0.8811],
+        [0.8541],
+        [0.8678],
+        [0.9541],
+        [0.8867],
+        [0.8778]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.3516],
+        [0.1490],
+        [0.4874],
+        [0.1020],
+        [0.3868],
+        [0.0794],
+        [0.0907],
+        [0.0886],
+        [0.7300],
+        [0.1627],
+        [0.0999],
+        [0.3976],
+        [0.1204],
+        [0.1312],
+        [0.0875],
+        [0.3513]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.0615],
+        [0.0710],
+        [0.0839],
+        [0.1481],
+        [0.0582],
+        [0.0388],
+        [0.0592],
+        [0.0567],
+        [0.1123],
+        [0.1464],
+        [0.0525],
+        [0.0715],
+        [0.1805],
+        [0.0869],
+        [0.0613],
+        [0.0692]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.8425],
+        [0.8850],
+        [0.8877],
+        [0.7227],
+        [0.8012],
+        [0.9516],
+        [0.8380],
+        [0.9174],
+        [0.8835],
+        [0.8592],
+        [0.9452],
+        [0.5735],
+        [0.6929],
+        [0.8897],
+        [0.8265],
+        [0.8647]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.8399],
+        [0.7824],
+        [0.8025],
+        [0.8343],
+        [0.8404],
+        [0.7568],
+        [0.8039],
+        [0.8394],
+        [0.5864],
+        [0.7832],
+        [0.8068],
+        [0.7989],
+        [0.7480],
+        [0.5958],
+        [0.8106],
+        [0.7976]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.3363],
+        [0.3977],
+        [0.4104],
+        [0.3943],
+        [0.2304],
+        [0.4908],
+        [0.3970],
+        [0.4952],
+        [0.5149],
+        [0.5363],
+        [0.4510],
+        [0.3505],
+        [0.4169],
+        [0.4057],
+        [0.3997],
+        [0.3954]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.5476],
+        [0.5757],
+        [0.3609],
+        [0.4684],
+        [0.4560],
+        [0.4197],
+        [0.2889],
+        [0.5713],
+        [0.5588],
+        [0.4798],
+        [0.4835],
+        [0.4652],
+        [0.6007],
+        [0.5466],
+        [0.4950],
+        [0.5107]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.8123],
+        [0.8546],
+        [0.7906],
+        [0.8185],
+        [0.8954],
+        [0.8707],
+        [0.8136],
+        [0.8216],
+        [0.8221],
+        [0.6079],
+        [0.8048],
+        [0.8192],
+        [0.8714],
+        [0.7849],
+        [0.8718],
+        [0.7842]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.4059],
+        [0.7709],
+        [0.5092],
+        [0.6328],
+        [0.6718],
+        [0.7544],
+        [0.8285],
+        [0.8166],
+        [0.7791],
+        [0.8064],
+        [0.7805],
+        [0.7504],
+        [0.5505],
+        [0.8704],
+        [0.7737],
+        [0.8075]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.4965],
+        [0.5090],
+        [0.4478],
+        [0.5117],
+        [0.4290],
+        [0.4090],
+        [0.4720],
+        [0.3841],
+        [0.3536],
+        [0.4911],
+        [0.4949],
+        [0.3849],
+        [0.5039],
+        [0.4562],
+        [0.3317],
+        [0.4574]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.1823],
+        [0.1468],
+        [0.1732],
+        [0.1930],
+        [0.2072],
+        [0.1550],
+        [0.2042],
+        [0.1759],
+        [0.1834],
+        [0.1634],
+        [0.1379],
+        [0.1037],
+        [0.1324],
+        [0.2023],
+        [0.1360],
+        [0.2574]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.2954],
+        [0.1390],
+        [0.2833],
+        [0.1762],
+        [0.1989],
+        [0.1727],
+        [0.1900],
+        [0.1388],
+        [0.1935],
+        [0.2638],
+        [0.1289],
+        [0.2012],
+        [0.2353],
+        [0.0952],
+        [0.2718],
+        [0.1529]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.7022],
+        [0.6371],
+        [0.7064],
+        [0.8572],
+        [0.5551],
+        [0.6100],
+        [0.6422],
+        [0.6311],
+        [0.8653],
+        [0.7684],
+        [0.5273],
+        [0.7147],
+        [0.7181],
+        [0.8139],
+        [0.7539],
+        [0.8580]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.5563],
+        [0.5470],
+        [0.4856],
+        [0.6353],
+        [0.7683],
+        [0.7278],
+        [0.4878],
+        [0.5465],
+        [0.5746],
+        [0.7646],
+        [0.4766],
+        [0.7700],
+        [0.5262],
+        [0.5810],
+        [0.7518],
+        [0.7761]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.2026],
+        [0.5531],
+        [0.3035],
+        [0.2319],
+        [0.3014],
+        [0.2647],
+        [0.2965],
+        [0.1852],
+        [0.1600],
+        [0.2060],
+        [0.3000],
+        [0.3398],
+        [0.2395],
+        [0.2210],
+        [0.3533],
+        [0.1632]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.6253],
+        [0.3467],
+        [0.6523],
+        [0.3860],
+        [0.6911],
+        [0.4996],
+        [0.6519],
+        [0.3847],
+        [0.6582],
+        [0.3223],
+        [0.6370],
+        [0.3194],
+        [0.3476],
+        [0.3855],
+        [0.6562],
+        [0.3427]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.7548],
+        [0.4530],
+        [0.5462],
+        [0.6683],
+        [0.6787],
+        [0.7862],
+        [0.3822],
+        [0.7325],
+        [0.7370],
+        [0.5536],
+        [0.4244],
+        [0.4561],
+        [0.4622],
+        [0.4954],
+        [0.6398],
+        [0.5110]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.7017],
+        [0.8592],
+        [0.5229],
+        [0.5809],
+        [0.6903],
+        [0.6460],
+        [0.5742],
+        [0.5556],
+        [0.8298],
+        [0.6649],
+        [0.6068],
+        [0.6573],
+        [0.5278],
+        [0.6082],
+        [0.7769],
+        [0.5555]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.5305],
+        [0.5327],
+        [0.4894],
+        [0.3249],
+        [0.5353],
+        [0.2327],
+        [0.5274],
+        [0.3468],
+        [0.5991],
+        [0.2006],
+        [0.1841],
+        [0.3725],
+        [0.5636],
+        [0.3563],
+        [0.5473],
+        [0.5865]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.1948],
+        [0.2448],
+        [0.2047],
+        [0.3562],
+        [0.5336],
+        [0.2127],
+        [0.5276],
+        [0.2239],
+        [0.5370],
+        [0.2247],
+        [0.2274],
+        [0.1504],
+        [0.4279],
+        [0.2354],
+        [0.3003],
+        [0.1333]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.5810],
+        [0.6407],
+        [0.6389],
+        [0.2711],
+        [0.4367],
+        [0.2532],
+        [0.6638],
+        [0.3505],
+        [0.6236],
+        [0.6294],
+        [0.2305],
+        [0.2910],
+        [0.2892],
+        [0.1645],
+        [0.1455],
+        [0.2244]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.0812],
+        [0.1726],
+        [0.6526],
+        [0.0569],
+        [0.1294],
+        [0.1288],
+        [0.5413],
+        [0.1189],
+        [0.1347],
+        [0.1646],
+        [0.4017],
+        [0.1211],
+        [0.5395],
+        [0.4805],
+        [0.1940],
+        [0.4732]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.1020],
+        [0.3355],
+        [0.1409],
+        [0.3655],
+        [0.1903],
+        [0.1546],
+        [0.0800],
+        [0.1774],
+        [0.4581],
+        [0.1193],
+        [0.1547],
+        [0.3339],
+        [0.0677],
+        [0.4256],
+        [0.0768],
+        [0.2969]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.9224],
+        [0.9091],
+        [0.6146],
+        [0.9558],
+        [0.9158],
+        [0.4292],
+        [0.9146],
+        [0.6712],
+        [0.5073],
+        [0.5411],
+        [0.9316],
+        [0.5967],
+        [0.6462],
+        [0.7240],
+        [0.9155],
+        [0.7300]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.9354],
+        [0.5168],
+        [0.9034],
+        [0.5549],
+        [0.4576],
+        [0.4052],
+        [0.3508],
+        [0.8857],
+        [0.8786],
+        [0.6053],
+        [0.3940],
+        [0.9327],
+        [0.5420],
+        [0.6248],
+        [0.4729],
+        [0.6172]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.6005],
+        [0.7023],
+        [0.4442],
+        [0.5599],
+        [0.1945],
+        [0.1902],
+        [0.5344],
+        [0.8305],
+        [0.4890],
+        [0.4016],
+        [0.3985],
+        [0.8457],
+        [0.8486],
+        [0.8443],
+        [0.5610],
+        [0.2749]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.0501],
+        [0.4466],
+        [0.3446],
+        [0.0630],
+        [0.3795],
+        [0.1367],
+        [0.0664],
+        [0.0567],
+        [0.1100],
+        [0.0977],
+        [0.1506],
+        [0.4421],
+        [0.4230],
+        [0.0939],
+        [0.1631],
+        [0.0684]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.1288],
+        [0.3641],
+        [0.0447],
+        [0.2155],
+        [0.0803],
+        [0.2342],
+        [0.0251],
+        [0.0992],
+        [0.0449],
+        [0.0235],
+        [0.1804],
+        [0.0954],
+        [0.0449],
+        [0.0621],
+        [0.0293],
+        [0.0368]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.5122],
+        [0.1292],
+        [0.5109],
+        [0.0946],
+        [0.1380],
+        [0.5782],
+        [0.6905],
+        [0.1553],
+        [0.1349],
+        [0.1178],
+        [0.1420],
+        [0.1326],
+        [0.1246],
+        [0.4649],
+        [0.2185],
+        [0.1171]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.3984],
+        [0.1555],
+        [0.1156],
+        [0.6181],
+        [0.2385],
+        [0.5967],
+        [0.5929],
+        [0.5675],
+        [0.1533],
+        [0.1218],
+        [0.1282],
+        [0.3573],
+        [0.3616],
+        [0.4093],
+        [0.1559],
+        [0.1764]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.5350],
+        [0.3845],
+        [0.4283],
+        [0.5749],
+        [0.7318],
+        [0.6185],
+        [0.4662],
+        [0.4232],
+        [0.3371],
+        [0.4014],
+        [0.6125],
+        [0.4646],
+        [0.2902],
+        [0.8819],
+        [0.4946],
+        [0.4151]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.3330],
+        [0.7920],
+        [0.6226],
+        [0.4093],
+        [0.7876],
+        [0.8408],
+        [0.8594],
+        [0.7687],
+        [0.4364],
+        [0.8958],
+        [0.7168],
+        [0.6512],
+        [0.8173],
+        [0.4801],
+        [0.3834],
+        [0.7127]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.7056],
+        [0.7071],
+        [0.5156],
+        [0.7372],
+        [0.6448],
+        [0.4951],
+        [0.6349],
+        [0.8561],
+        [0.5378],
+        [0.8660],
+        [0.4974],
+        [0.8474],
+        [0.8931],
+        [0.9384],
+        [0.8533],
+        [0.8739]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.8073],
+        [0.4650],
+        [0.4725],
+        [0.3140],
+        [0.3430],
+        [0.3667],
+        [0.6098],
+        [0.7108],
+        [0.7747],
+        [0.7577],
+        [0.2884],
+        [0.7525],
+        [0.4150],
+        [0.6965],
+        [0.6877],
+        [0.8194]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.5916],
+        [0.4235],
+        [0.1326],
+        [0.5788],
+        [0.7698],
+        [0.2994],
+        [0.1269],
+        [0.1937],
+        [0.5783],
+        [0.1199],
+        [0.1861],
+        [0.3979],
+        [0.5924],
+        [0.1677],
+        [0.4548],
+        [0.0818]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.0218],
+        [0.0528],
+        [0.0501],
+        [0.0909],
+        [0.0816],
+        [0.0407],
+        [0.0778],
+        [0.0605],
+        [0.1084],
+        [0.0550],
+        [0.3659],
+        [0.0349],
+        [0.0519],
+        [0.1557],
+        [0.0845],
+        [0.0925]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.7302],
+        [0.5926],
+        [0.2686],
+        [0.6121],
+        [0.2656],
+        [0.6096],
+        [0.2915],
+        [0.8357],
+        [0.4340],
+        [0.5975],
+        [0.3409],
+        [0.4044],
+        [0.4521],
+        [0.5931],
+        [0.5603],
+        [0.3583]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.9663],
+        [0.7999],
+        [0.5721],
+        [0.7798],
+        [0.8675],
+        [0.9675],
+        [0.9825],
+        [0.9109],
+        [0.8324],
+        [0.9205],
+        [0.7102],
+        [0.6676],
+        [0.6803],
+        [0.8067],
+        [0.7605],
+        [0.9101]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.0630],
+        [0.7447],
+        [0.0638],
+        [0.0762],
+        [0.2190],
+        [0.0962],
+        [0.0839],
+        [0.3167],
+        [0.0609],
+        [0.0387],
+        [0.0735],
+        [0.2409],
+        [0.2613],
+        [0.1095],
+        [0.0378],
+        [0.2022]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.0356],
+        [0.0033],
+        [0.1721],
+        [0.0238],
+        [0.0329],
+        [0.0111],
+        [0.0126],
+        [0.1478],
+        [0.0511],
+        [0.1430],
+        [0.0117],
+        [0.0241],
+        [0.0174],
+        [0.1003],
+        [0.0512],
+        [0.0427]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.0671],
+        [0.1713],
+        [0.3355],
+        [0.0675],
+        [0.2261],
+        [0.0278],
+        [0.1594],
+        [0.0196],
+        [0.2075],
+        [0.1118],
+        [0.4855],
+        [0.4508],
+        [0.2905],
+        [0.1921],
+        [0.0332],
+        [0.0743]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.9276],
+        [0.9587],
+        [0.9809],
+        [0.9848],
+        [0.9822],
+        [0.9722],
+        [0.9925],
+        [0.9699],
+        [0.5447],
+        [0.9560],
+        [0.9269],
+        [0.9771],
+        [0.9792],
+        [0.9571],
+        [0.9892],
+        [0.9829]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.9659],
+        [0.9712],
+        [0.9425],
+        [0.9972],
+        [0.9477],
+        [0.9829],
+        [0.9961],
+        [0.9922],
+        [0.9410],
+        [0.9966],
+        [0.9961],
+        [0.9110],
+        [0.9834],
+        [0.9863],
+        [0.9968],
+        [0.8874]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([3, 200, 17, 2])
+Spatial Forward Features:  torch.Size([3, 200, 544])
+Temporal Features:  torch.Size([3, 544])
+Classification Head:  torch.Size([3, 1])
+Predict Probs:  tensor([[0.4342],
+        [0.3435],
+        [0.7278]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Epoch:  0  Loss:  0.76  Accuracy: 59.71  for  449 / 752
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.0020],
+        [0.0379],
+        [0.0024],
+        [0.0119],
+        [0.0020],
+        [0.0016],
+        [0.0135],
+        [0.0021],
+        [0.0438],
+        [0.0272],
+        [0.0010],
+        [0.0101],
+        [0.1436],
+        [0.0284],
+        [0.0206],
+        [0.0029]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.0015],
+        [0.0625],
+        [0.0665],
+        [0.0650],
+        [0.0118],
+        [0.0023],
+        [0.0012],
+        [0.0015],
+        [0.1169],
+        [0.1333],
+        [0.0033],
+        [0.1370],
+        [0.0012],
+        [0.0011],
+        [0.0030],
+        [0.0047]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.0297],
+        [0.1806],
+        [0.0690],
+        [0.4923],
+        [0.9237],
+        [0.0307],
+        [0.0715],
+        [0.1974],
+        [0.0761],
+        [0.8270],
+        [0.8157],
+        [0.0356],
+        [0.1317],
+        [0.1043],
+        [0.1430],
+        [0.0432]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.9966],
+        [0.9969],
+        [0.8151],
+        [0.9948],
+        [0.8414],
+        [0.8453],
+        [0.9970],
+        [0.7906],
+        [0.9083],
+        [0.9833],
+        [0.7664],
+        [0.9415],
+        [0.9970],
+        [0.8836],
+        [0.9300],
+        [0.9967]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.9698],
+        [0.9831],
+        [0.9978],
+        [0.9833],
+        [0.9720],
+        [0.8275],
+        [0.8077],
+        [0.9527],
+        [0.9356],
+        [0.8924],
+        [0.8758],
+        [0.8194],
+        [0.9977],
+        [0.8975],
+        [0.9846],
+        [0.9978]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.2062],
+        [0.0633],
+        [0.9480],
+        [0.2570],
+        [0.9502],
+        [0.4627],
+        [0.9713],
+        [0.9588],
+        [0.1435],
+        [0.9519],
+        [0.6420],
+        [0.3305],
+        [0.9868],
+        [0.2885],
+        [0.4019],
+        [0.3416]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.0179],
+        [0.0245],
+        [0.0357],
+        [0.0085],
+        [0.0244],
+        [0.0101],
+        [0.0470],
+        [0.0282],
+        [0.0132],
+        [0.2524],
+        [0.2671],
+        [0.0077],
+        [0.0067],
+        [0.2694],
+        [0.0120],
+        [0.0131]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.1097],
+        [0.0140],
+        [0.0245],
+        [0.0072],
+        [0.0596],
+        [0.0857],
+        [0.0775],
+        [0.1645],
+        [0.0538],
+        [0.0816],
+        [0.0059],
+        [0.0917],
+        [0.0057],
+        [0.0048],
+        [0.0076],
+        [0.0049]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.0279],
+        [0.0197],
+        [0.0390],
+        [0.0134],
+        [0.3142],
+        [0.0240],
+        [0.0220],
+        [0.6521],
+        [0.0543],
+        [0.0728],
+        [0.0174],
+        [0.0729],
+        [0.0543],
+        [0.3586],
+        [0.0156],
+        [0.0263]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.5868],
+        [0.4553],
+        [0.9006],
+        [0.4689],
+        [0.4587],
+        [0.9485],
+        [0.3108],
+        [0.9568],
+        [0.8418],
+        [0.7074],
+        [0.9486],
+        [0.9493],
+        [0.4408],
+        [0.9484],
+        [0.8546],
+        [0.7745]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.9862],
+        [0.9207],
+        [0.9882],
+        [0.9563],
+        [0.9494],
+        [0.9191],
+        [0.9606],
+        [0.8957],
+        [0.9409],
+        [0.9840],
+        [0.9375],
+        [0.9808],
+        [0.9916],
+        [0.9893],
+        [0.9912],
+        [0.9209]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.9097],
+        [0.9220],
+        [0.8534],
+        [0.9853],
+        [0.8993],
+        [0.9770],
+        [0.9200],
+        [0.9963],
+        [0.9876],
+        [0.8049],
+        [0.9960],
+        [0.9937],
+        [0.9840],
+        [0.9953],
+        [0.6790],
+        [0.8792]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.9638],
+        [0.1156],
+        [0.9832],
+        [0.1061],
+        [0.2348],
+        [0.0638],
+        [0.6426],
+        [0.1026],
+        [0.0949],
+        [0.9841],
+        [0.7590],
+        [0.0519],
+        [0.0542],
+        [0.1548],
+        [0.9858],
+        [0.4830]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.0027],
+        [0.0639],
+        [0.0498],
+        [0.0667],
+        [0.0114],
+        [0.0032],
+        [0.8845],
+        [0.0020],
+        [0.9327],
+        [0.0023],
+        [0.0571],
+        [0.0307],
+        [0.0219],
+        [0.0472],
+        [0.0098],
+        [0.9328]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.1133],
+        [0.8843],
+        [0.0031],
+        [0.1015],
+        [0.9281],
+        [0.0057],
+        [0.0024],
+        [0.0027],
+        [0.0021],
+        [0.0042],
+        [0.0131],
+        [0.1464],
+        [0.0036],
+        [0.0541],
+        [0.0031],
+        [0.8636]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.0218],
+        [0.0534],
+        [0.8059],
+        [0.0068],
+        [0.9034],
+        [0.8566],
+        [0.3372],
+        [0.0037],
+        [0.5292],
+        [0.0476],
+        [0.2145],
+        [0.5183],
+        [0.0166],
+        [0.7634],
+        [0.4945],
+        [0.2498]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.0338],
+        [0.7103],
+        [0.4577],
+        [0.2213],
+        [0.9382],
+        [0.9525],
+        [0.9912],
+        [0.7671],
+        [0.1636],
+        [0.7117],
+        [0.0621],
+        [0.0332],
+        [0.6702],
+        [0.6607],
+        [0.0337],
+        [0.6180]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.1817],
+        [0.2796],
+        [0.4050],
+        [0.6330],
+        [0.7139],
+        [0.6930],
+        [0.9951],
+        [0.0261],
+        [0.4864],
+        [0.0748],
+        [0.4492],
+        [0.4517],
+        [0.5928],
+        [0.9930],
+        [0.0422],
+        [0.1177]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.0391],
+        [0.2836],
+        [0.9985],
+        [0.0175],
+        [0.1939],
+        [0.9962],
+        [0.5166],
+        [0.1615],
+        [0.1631],
+        [0.9851],
+        [0.2688],
+        [0.0044],
+        [0.2439],
+        [0.7907],
+        [0.9911],
+        [0.4687]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.0886],
+        [0.8396],
+        [0.0191],
+        [0.9139],
+        [0.0021],
+        [0.9358],
+        [0.0028],
+        [0.8063],
+        [0.9979],
+        [0.2270],
+        [0.7516],
+        [0.1862],
+        [0.6808],
+        [0.8978],
+        [0.8884],
+        [0.7685]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.9985],
+        [0.9993],
+        [0.0397],
+        [0.8574],
+        [0.9970],
+        [0.9919],
+        [0.0126],
+        [0.0745],
+        [0.8901],
+        [0.0035],
+        [0.8684],
+        [0.9721],
+        [0.0789],
+        [0.9996],
+        [0.0295],
+        [0.8193]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[5.3654e-04],
+        [9.0017e-01],
+        [8.5387e-03],
+        [9.9368e-01],
+        [2.4593e-03],
+        [8.9841e-01],
+        [8.7948e-01],
+        [8.9798e-01],
+        [4.3861e-04],
+        [8.8287e-01],
+        [9.9804e-01],
+        [9.9060e-01],
+        [5.9802e-03],
+        [1.1622e-02],
+        [9.8643e-01],
+        [9.1114e-01]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[9.9602e-01],
+        [9.8365e-01],
+        [1.2312e-04],
+        [1.4369e-01],
+        [1.1107e-02],
+        [3.9795e-04],
+        [2.5627e-03],
+        [1.6624e-03],
+        [2.7266e-03],
+        [8.7262e-01],
+        [2.4187e-04],
+        [2.8544e-04],
+        [3.7298e-04],
+        [1.5327e-03],
+        [2.7141e-03],
+        [8.8672e-01]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[2.8964e-01],
+        [6.8586e-01],
+        [7.8967e-01],
+        [8.0308e-01],
+        [1.1932e-04],
+        [1.5490e-03],
+        [4.0907e-04],
+        [1.4572e-01],
+        [1.7111e-04],
+        [9.7974e-01],
+        [9.8296e-01],
+        [3.4896e-04],
+        [4.6798e-04],
+        [5.1364e-01],
+        [8.3031e-01],
+        [7.7529e-01]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[5.1145e-01],
+        [4.8548e-01],
+        [7.4719e-04],
+        [9.9883e-01],
+        [1.0860e-03],
+        [8.1656e-05],
+        [1.1620e-04],
+        [1.7189e-02],
+        [4.6165e-01],
+        [4.4177e-01],
+        [5.1958e-03],
+        [3.9379e-04],
+        [1.5452e-04],
+        [9.3744e-01],
+        [9.9797e-01],
+        [2.6338e-01]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[7.9420e-04],
+        [4.0526e-04],
+        [8.8074e-01],
+        [1.7195e-03],
+        [9.9836e-01],
+        [5.8292e-04],
+        [9.0726e-01],
+        [6.4150e-04],
+        [3.1885e-04],
+        [3.6590e-02],
+        [9.9895e-01],
+        [4.5436e-04],
+        [5.9593e-01],
+        [9.9729e-01],
+        [4.9784e-02],
+        [9.9848e-01]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[3.8890e-03],
+        [9.8944e-01],
+        [5.8685e-03],
+        [5.0538e-01],
+        [2.2955e-02],
+        [7.8145e-01],
+        [9.9638e-01],
+        [3.7377e-02],
+        [3.3466e-04],
+        [9.4505e-01],
+        [3.9654e-03],
+        [9.8324e-01],
+        [8.5399e-01],
+        [9.9092e-01],
+        [5.9514e-02],
+        [9.9646e-01]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.9554],
+        [0.9292],
+        [0.0064],
+        [0.9957],
+        [0.0021],
+        [0.9978],
+        [0.9973],
+        [0.0014],
+        [0.9374],
+        [0.0230],
+        [0.9988],
+        [0.8481],
+        [0.9541],
+        [0.9419],
+        [0.9098],
+        [0.9747]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.9916],
+        [0.8140],
+        [0.0738],
+        [0.9923],
+        [0.9510],
+        [0.1737],
+        [0.9664],
+        [0.0016],
+        [0.1268],
+        [0.0947],
+        [0.9100],
+        [0.6940],
+        [0.9904],
+        [0.9385],
+        [0.8799],
+        [0.9421]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.9915],
+        [0.9676],
+        [0.0257],
+        [0.7949],
+        [0.9863],
+        [0.0048],
+        [0.7747],
+        [0.9088],
+        [0.0112],
+        [0.0718],
+        [0.8120],
+        [0.0039],
+        [0.9732],
+        [0.7794],
+        [0.0011],
+        [0.9939]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.3838],
+        [0.8253],
+        [0.6411],
+        [0.6454],
+        [0.7949],
+        [0.0204],
+        [0.9775],
+        [0.0174],
+        [0.0048],
+        [0.0135],
+        [0.0108],
+        [0.0090],
+        [0.6213],
+        [0.6453],
+        [0.0124],
+        [0.4282]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.0076],
+        [0.6044],
+        [0.0541],
+        [0.1638],
+        [0.6163],
+        [0.9099],
+        [0.0108],
+        [0.5147],
+        [0.9139],
+        [0.9680],
+        [0.0153],
+        [0.0048],
+        [0.1291],
+        [0.0077],
+        [0.0101],
+        [0.0030]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.3129],
+        [0.2522],
+        [0.0013],
+        [0.0065],
+        [0.8776],
+        [0.9331],
+        [0.0019],
+        [0.8962],
+        [0.0093],
+        [0.9157],
+        [0.0367],
+        [0.6737],
+        [0.4116],
+        [0.7420],
+        [0.0028],
+        [0.2477]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.3009],
+        [0.0136],
+        [0.3825],
+        [0.2795],
+        [0.4039],
+        [0.0347],
+        [0.0085],
+        [0.0260],
+        [0.6525],
+        [0.4938],
+        [0.4280],
+        [0.2023],
+        [0.0380],
+        [0.5695],
+        [0.0388],
+        [0.0063]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.9565],
+        [0.9337],
+        [0.9141],
+        [0.5076],
+        [0.0126],
+        [0.9099],
+        [0.0150],
+        [0.6319],
+        [0.0280],
+        [0.9595],
+        [0.0084],
+        [0.5499],
+        [0.0376],
+        [0.9697],
+        [0.6192],
+        [0.8970]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.7896],
+        [0.9655],
+        [0.8456],
+        [0.7698],
+        [0.9124],
+        [0.9198],
+        [0.6147],
+        [0.0061],
+        [0.6942],
+        [0.9052],
+        [0.1289],
+        [0.0166],
+        [0.4940],
+        [0.0205],
+        [0.0758],
+        [0.0074]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.6484],
+        [0.0126],
+        [0.7544],
+        [0.2682],
+        [0.5717],
+        [0.8169],
+        [0.0926],
+        [0.8503],
+        [0.0069],
+        [0.0532],
+        [0.7857],
+        [0.0430],
+        [0.9416],
+        [0.0323],
+        [0.0173],
+        [0.0061]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.9447],
+        [0.9019],
+        [0.3609],
+        [0.6384],
+        [0.9044],
+        [0.0686],
+        [0.7986],
+        [0.0233],
+        [0.3825],
+        [0.0196],
+        [0.8441],
+        [0.8850],
+        [0.0051],
+        [0.7972],
+        [0.0697],
+        [0.0150]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.8158],
+        [0.8727],
+        [0.6345],
+        [0.2853],
+        [0.0966],
+        [0.0332],
+        [0.6064],
+        [0.5172],
+        [0.8871],
+        [0.0190],
+        [0.1198],
+        [0.6391],
+        [0.3708],
+        [0.6667],
+        [0.1439],
+        [0.0179]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.0296],
+        [0.2938],
+        [0.0318],
+        [0.0963],
+        [0.3046],
+        [0.5864],
+        [0.0437],
+        [0.4074],
+        [0.2205],
+        [0.0785],
+        [0.3914],
+        [0.0425],
+        [0.0911],
+        [0.2893],
+        [0.2831],
+        [0.0864]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.0107],
+        [0.0055],
+        [0.2676],
+        [0.0133],
+        [0.0333],
+        [0.0115],
+        [0.0266],
+        [0.0331],
+        [0.3099],
+        [0.3777],
+        [0.1231],
+        [0.0106],
+        [0.3238],
+        [0.4283],
+        [0.0295],
+        [0.1046]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.0508],
+        [0.0135],
+        [0.6691],
+        [0.6115],
+        [0.1094],
+        [0.1139],
+        [0.0603],
+        [0.1290],
+        [0.2516],
+        [0.5513],
+        [0.5620],
+        [0.0237],
+        [0.5263],
+        [0.0207],
+        [0.6401],
+        [0.4489]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.0552],
+        [0.5149],
+        [0.8304],
+        [0.0297],
+        [0.5792],
+        [0.7691],
+        [0.9046],
+        [0.8318],
+        [0.0519],
+        [0.1802],
+        [0.1128],
+        [0.7066],
+        [0.1108],
+        [0.6659],
+        [0.6745],
+        [0.8469]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.2276],
+        [0.9203],
+        [0.0349],
+        [0.0344],
+        [0.9406],
+        [0.8426],
+        [0.1159],
+        [0.9409],
+        [0.1450],
+        [0.9418],
+        [0.8765],
+        [0.9298],
+        [0.9429],
+        [0.8852],
+        [0.9309],
+        [0.9558]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.0274],
+        [0.9907],
+        [0.0629],
+        [0.9480],
+        [0.1924],
+        [0.4852],
+        [0.9905],
+        [0.5060],
+        [0.9728],
+        [0.9588],
+        [0.9515],
+        [0.9492],
+        [0.2575],
+        [0.9515],
+        [0.8129],
+        [0.9569]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([16, 200, 17, 2])
+Spatial Forward Features:  torch.Size([16, 200, 544])
+Temporal Features:  torch.Size([16, 544])
+Classification Head:  torch.Size([16, 1])
+Predict Probs:  tensor([[0.0937],
+        [0.0069],
+        [0.1291],
+        [0.9543],
+        [0.8229],
+        [0.9635],
+        [0.2228],
+        [0.8880],
+        [0.0177],
+        [0.8984],
+        [0.8572],
+        [0.7086],
+        [0.8133],
+        [0.9642],
+        [0.9577],
+        [0.9640]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Original X:  torch.Size([3, 200, 17, 2])
+Spatial Forward Features:  torch.Size([3, 200, 544])
+Temporal Features:  torch.Size([3, 544])
+Classification Head:  torch.Size([3, 1])
+Predict Probs:  tensor([[0.9639],
+        [0.8975],
+        [0.3022]], device='cuda:0', grad_fn=<SigmoidBackward>)
+Epoch:  1  Loss:  0.77  Accuracy: 69.28  for  521 / 752
+slurmstepd: error: *** JOB 8647 ON c3-3 CANCELLED AT 2021-12-04T15:13:15 ***

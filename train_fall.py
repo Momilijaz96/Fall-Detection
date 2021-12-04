@@ -1,6 +1,6 @@
 import torch
 import numpy as np
-from data_gen import Poses2d_Dataset,label,partition,pose2id
+from data_gen_fall import Poses2d_Dataset,label,partition,pose2id
 from FallModel.pf4fall import FallTransformer
 from utils.visualize import get_plot
 
@@ -57,14 +57,14 @@ for epoch in range(max_epochs):
         optimizer.zero_grad()
 
         #Predict fall/no fall activity
-        predict_labels=fall_model(local_batch.float())
+        predict_probs=fall_model(local_batch.float())
 
         #print("Target is", local_labels.size())
         #print("Pred is", predict_labels.size())        
         #Compute loss
         local_labels=local_labels.view(local_labels.size()[0],1)
         local_labels=local_labels.to(torch.float32)
-        prediction_loss=criterion(predict_labels,local_labels)
+        prediction_loss=criterion(predict_probs,local_labels)
         
         #Compute gradients
         prediction_loss.backward()
@@ -73,10 +73,10 @@ for epoch in range(max_epochs):
         optimizer.step()
 
         #per epoch loss
-        loss.append(prediction_loss.item())
+        loss.append(prediction_loss.item()); #print("Predict Probs: ",predict_probs)
 
         #Compute number of correctly predicted
-        correct += ((predict_labels>=inf_threshold)==local_labels).sum().item()
+        correct += ((predict_probs>=inf_threshold)==local_labels).sum().item()
     
     num_samples=(batch_idx+1) * params['batch_size']
     train_acc = 100 * correct / num_samples
