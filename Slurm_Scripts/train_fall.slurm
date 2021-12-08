@@ -2,7 +2,7 @@
 #SBATCH -p gpu
 #SBATCH --gres=gpu:2 
 #SBATCH -c 6
-#SBATCH -o fallout
+#SBATCH -o trainfall
 #SBATCH --job-name=trainfall
 #SBATCH --nodes=1
 #SBATCH --time=02:00:00

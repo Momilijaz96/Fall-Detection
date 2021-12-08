@@ -1,0 +1,4 @@
+ Loss:  0.07  Accuracy: 95.0  for  304 / 320
+Precesion :  tensor(0.9290, device='cuda:0')
+Recall :  tensor(0.9863, device='cuda:0')
+F1 score :  tensor(0.9568, device='cuda:0')

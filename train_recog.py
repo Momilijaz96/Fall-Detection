@@ -13,7 +13,7 @@ torch.backends.cudnn.benchmark = True
 params = {'batch_size': 16,
           'shuffle': True,
           'num_workers': 6}
-max_epochs = 400
+max_epochs = 200
 inf_threshold=0.5
 
 
@@ -37,10 +37,10 @@ model=model.to(device)
 
 #Define loss and optimizer
 criterion=torch.nn.CrossEntropyLoss()
-#optimizer=torch.optim.SGD(model.parameters(), lr=0.01, momentum=0.9)
-lr=0.00011
-lr_decay=0.99
-optimizer = torch.optim.AdamW(model.parameters(), lr=lr, weight_decay=0.1)
+optimizer=torch.optim.SGD(model.parameters(), lr=0.01, momentum=0.9)
+#lr=0.00011
+#lr_decay=0.99
+#optimizer = torch.optim.AdamW(model.parameters(), lr=lr, weight_decay=0.1)
 
 #Loop over epochs
 print("Begin Training....")
@@ -81,9 +81,9 @@ for epoch in range(max_epochs):
         correct += (predict_labels==local_labels).sum().item()
 	
         #Decay lr exponentially
-        lr *= lr_decay
-        for param_group in optimizer.param_groups:
-            param_group['lr'] *= lr_decay
+        #lr *= lr_decay
+        #for param_group in optimizer.param_groups:
+            #param_group['lr'] *= lr_decay
     
     num_samples=(batch_idx+1) * params['batch_size']
     train_acc = 100 * correct / num_samples

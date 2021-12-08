@@ -2,8 +2,9 @@ import numpy as np
 from data_gen_recog import Poses2d_Dataset,label,partition,pose2id
 from RecogModel.recog_model import RecogTransformer
 import torch
-from sklearn.metrics import precision_recall_fscore_support
-
+from sklearn.metrics import classification_report
+from sklearn import metrics
+import seaborn as sns
 #CUDA for PyTorch
 use_cuda = torch.cuda.is_available()
 device = torch.device("cuda:0" if use_cuda else "cpu")
@@ -12,7 +13,7 @@ torch.backends.cudnn.benchmark = True
 # Datasets
 partition = partition
 labels = label
-num_frames=200
+num_frames=250
 # Parameters
 params = {'batch_size':16,
         'shuffle': True,
@@ -26,17 +27,16 @@ validation_generator = torch.utils.data.DataLoader(validation_set, **params)
 
 #Load pretrained model and criterion
 
-model_path='recog_model.pt'
-fall_model=torch.load(model_path)
-fall_model=fall_model.to(device)
-criterion=torch.nn.BCELoss()
+model_path='/home/mo926312/Documents/falldet/Fall-Detection/modelZoo/recog_model.pt'
+model=torch.load(model_path)
+model=model.to(device)
+criterion=torch.nn.CrossEntropyLoss()
 
 #Loop over validation split
-fall_model.eval()
+model.eval()
 loss=[]
-correct_true=0
-pred_true=0
-target_true=0
+y_true=[]
+y_pred=[]
 all_correct=0
 for batch_idx,sample in enumerate(validation_generator):
     #Transfer to GPU
@@ -44,7 +44,7 @@ for batch_idx,sample in enumerate(validation_generator):
     local_batch, local_labels = local_batch.to(device), local_labels.to(device)
 
     #Predict fall/no fall activity
-    predict_probs=fall_model(local_batch.float())
+    predict_probs=model(local_batch.float())
 
     #Compute loss
     prediction_loss=criterion(predict_probs,local_labels)
@@ -53,25 +53,26 @@ for batch_idx,sample in enumerate(validation_generator):
     loss.append(prediction_loss.item())
 
     #Compute number of correctly predicted
-    predict_labels = torch.argmax(predict_probs)
+    predict_labels = torch.argmax(predict_probs,dim=1)
+    y_true+=(list(local_labels.cpu().detach().numpy()))
+    y_pred+=(list(predict_labels.cpu().detach().numpy()))
     all_correct+= torch.sum(predict_labels==local_labels).item()
-    target_true += torch.sum(local_labels == 1).float()
-    pred_true += torch.sum(predict_labels == 1).float()
-    correct_true += torch.sum((predict_labels == local_labels) & (local_labels==1)).item()
 
 
 num_samples=(batch_idx+1) * params['batch_size']
 test_acc = 100. * all_correct / num_samples
 print(" Loss: ",np.round(np.mean(loss),2)," Accuracy:",np.round(test_acc,2)," for ",all_correct,"/",num_samples)
-precision=correct_true / pred_true
-print("Precesion : ",precision)
-recall=correct_true / target_true
-print("Recall : ",recall)
-print("F1 score : ",2 * precision * recall / (precision + recall))
 
+# Print the confusion matrix
+print(metrics.confusion_matrix(y_true, y_pred))
 
+# Print the precision and recall, among other metrics
+cf_matrix=metrics.confusion_matrix(y_true, y_pred)
+print(metrics.classification_report(y_true, y_pred, digits=3))
 
+#Visualize confusion matrix
 
-
-
+cf_plot=sns.heatmap(cf_matrix, annot=True)
+fig = cf_plot.get_figure()
+fig.savefig('cfmatrix.png') 
 

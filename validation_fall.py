@@ -1,6 +1,6 @@
 import numpy as np
-from data_gen import Poses2d_Dataset,label,partition,pose2id
-from Model.pf4fall import FallTransformer
+from data_gen_fall import Poses2d_Dataset,label,partition,pose2id
+from FallModel.pf4fall import FallTransformer
 import torch
 from sklearn.metrics import precision_recall_fscore_support
 
@@ -27,7 +27,7 @@ validation_generator = torch.utils.data.DataLoader(validation_set, **params)
 
 #Load pretrained model and criterion
 
-model_path='fall_model.pt'
+model_path='/home/mo926312/Documents/falldet/Fall-Detection/modelZoo/fall_model.pt'
 fall_model=torch.load(model_path)
 fall_model=fall_model.to(device)
 criterion=torch.nn.BCELoss()

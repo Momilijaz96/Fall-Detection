@@ -1,0 +1,6 @@
+PATH:  /home/mo926312/Documents/falldet/YTubeFalls/jump1poses/alphapose-results.json
+Processed:  /home/mo926312/Documents/falldet/YTubeFalls/jump1poses/alphapose-results.json
+THE ACTION IS A  Not Fall
+Prediction Probability:  0.0003183842054568231
+Pose Preprocessing Time:  0.2640814781188965
+Model Inference Time:  0.011471986770629883

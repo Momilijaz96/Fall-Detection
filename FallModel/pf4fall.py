@@ -106,15 +106,15 @@ class FallTransformer(nn.Module):
         return x
 
     def forward(self, x):
-        print("Original X: ",x.shape)
+        #print("Original X: ",x.shape)
         x = x.permute(0, 3, 1, 2) #Rearranges original tensor according to specified index order
         b, _, _, p = x.shape
         ### now x is [batch_size, 2 channels, receptive frames, joint_num], following image data
         x = self.Spatial_forward_features(x)
-        print("Spatial Forward Features: ",x.shape)
+        #print("Spatial Forward Features: ",x.shape)
         x = self.forward_features(x)
-        print("Temporal Features: ",x.shape)
+        #print("Temporal Features: ",x.shape)
         x = self.class_head(x)
-        print("Classification Head: ",x.shape)
+        #print("Classification Head: ",x.shape)
 
         return self.sigmoid(x)

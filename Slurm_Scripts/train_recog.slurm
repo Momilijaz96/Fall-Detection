@@ -5,7 +5,7 @@
 #SBATCH -o trainrecog
 #SBATCH --job-name=trainrecog
 #SBATCH --nodes=1
-#SBATCH --time=02:00:00
+#SBATCH --time=03:00:00
 
 module load anaconda3/2019.03-1
 source activate fallenv

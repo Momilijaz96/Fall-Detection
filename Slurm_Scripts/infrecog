@@ -1,0 +1,6 @@
+PATH:  /home/mo926312/Documents/falldet/YTubeFalls/walk2poses/alphapose-results.json
+Processed:  /home/mo926312/Documents/falldet/YTubeFalls/walk2poses/alphapose-results.json
+Poses shape:  torch.Size([1, 250, 17, 2])
+THE ACTION IS A  Picking up an object	
+Pose Preprocessing Time:  0.3759751319885254
+Model Inference Time:  0.00890660285949707
